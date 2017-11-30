@@ -97,8 +97,8 @@ module Hanami
         #
         #   #
         #   # `user` will be available in the scope of the sidebar rendering
-        def render(options)
-          renderer(options).render
+        def render(options, &blk)
+          renderer(options).render(&blk)
         end
 
         # Returns the requested format.
